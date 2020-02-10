@@ -1,0 +1,48 @@
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav           nav           nav"
+                         "header        header     header"
+                         "tml-title  tml-title  tml-title"
+                         "image-left timeline image-right"
+                         "quotes        quote       quote"
+                         "footer        footer     footer";}
+
+#nav {
+    grid-area: nav;
+    background-color: blue;
+}
+
+#site-header {
+    grid-area: header;
+    background-image: url(/images/kobe1.jpg);
+}
+
+#timeline-title{
+    grid-area: tml-title;
+    background-color: yellowgreen;
+}
+#tribute-info {
+    grid-area: timeline;
+    background-color: brown;
+}
+
+#left-image {
+    grid-area: image-left;
+    background-color: coral;
+}
+
+#right-image {
+    grid-area: image-right;
+    background-color: darkcyan;
+}
+
+#quote {
+    grid-area: quote;
+    background-color: deeppink;
+}
+#site-footer {
+    grid-area: footer;
+    background-color: greenyellow;
+}
