@@ -1,48 +1,62 @@
 #main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "nav           nav           nav"
-                         "header        header     header"
-                         "tml-title  tml-title  tml-title"
-                         "image-left timeline image-right"
-                         "quotes        quote       quote"
-                         "footer        footer     footer";}
-
-#nav {
-    grid-area: nav;
-    background-color: blue;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav        nav            nav"
+    "hero       hero          hero"
+    "left-img   timeline right-img"
+    "career     awards    personal"
+    "quote      quote        quote"
+    "footer     footer      footer";
 }
 
-#site-header {
-    grid-area: header;
-    background-image: url(/images/kobe1.jpg);
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+#nav-bar {
+grid-area: nav;
+background-color: black;
+color: white;
+align-self: left;
 }
 
-#timeline-title{
-    grid-area: tml-title;
-    background-color: yellowgreen;
+#hero-banner {
+grid-area: hero;
 }
-#tribute-info {
-    grid-area: timeline;
-    background-color: brown;
+
+#timeline {
+grid-area: timeline;
 }
 
 #left-image {
-    grid-area: image-left;
-    background-color: coral;
+grid-area: left-img;
 }
 
 #right-image {
-    grid-area: image-right;
-    background-color: darkcyan;
+grid-area: right-img;
+}
+
+#career-stats {
+grid-area: career;
+}
+
+#awards {
+grid-area: awards;
+}
+
+#personal-info {
+grid-area: personal;
 }
 
 #quote {
-    grid-area: quote;
-    background-color: deeppink;
+grid-area: quote;
 }
-#site-footer {
-    grid-area: footer;
-    background-color: greenyellow;
+
+#footer {
+grid-area: footer;
+background-color: black;
+color: white;
 }
