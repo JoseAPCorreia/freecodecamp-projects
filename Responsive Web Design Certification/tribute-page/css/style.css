@@ -11,16 +11,25 @@
     "footer     footer      footer";
 }
 
+body {
+    background-color: black;
+    color: white;
+}
+
 img {
     max-width: 100%;
     display: block;
     height: auto;
 }
+
+h2 {
+    text-align: center;
+}
 #nav-bar {
 grid-area: nav;
 background-color: black;
 color: white;
-align-self: left;
+text-align: right;
 }
 
 #hero-banner {
@@ -31,6 +40,9 @@ grid-area: hero;
 grid-area: timeline;
 }
 
+li {
+    padding-bottom: 10px;
+}
 #left-image {
 grid-area: left-img;
 }
@@ -53,10 +65,12 @@ grid-area: personal;
 
 #quote {
 grid-area: quote;
+background-image: url(/images/kobe-quote.jpg);
 }
 
 #footer {
 grid-area: footer;
 background-color: black;
+text-align: center;
 color: white;
 }
