@@ -1,76 +1,20 @@
 #main {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "nav        nav            nav"
-    "hero       hero          hero"
-    "left-img   timeline right-img"
-    "career     awards    personal"
-    "quote      quote        quote"
-    "footer     footer      footer";
-}
-
-body {
-    background-color: black;
-    color: white;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-}
-
-h2 {
+    display: flex;
     text-align: center;
-}
-#nav-bar {
-grid-area: nav;
-background-color: black;
-color: white;
-text-align: right;
+    flex-direction: column;
 }
 
-#hero-banner {
-grid-area: hero;
+#title {
+
 }
 
-#timeline {
-grid-area: timeline;
+#img-div {
+
 }
 
-li {
-    padding-bottom: 10px;
-}
-#left-image {
-grid-area: left-img;
-}
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
 
-#right-image {
-grid-area: right-img;
-}
-
-#career-stats {
-grid-area: career;
-}
-
-#awards {
-grid-area: awards;
-}
-
-#personal-info {
-grid-area: personal;
-}
-
-#quote {
-grid-area: quote;
-background-image: url(/images/kobe-quote.jpg);
-}
-
-#footer {
-grid-area: footer;
-background-color: black;
-text-align: center;
-color: white;
-}
