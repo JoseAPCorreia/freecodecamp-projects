@@ -4,60 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c8684a9e07.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+    <title>Survey Form</title>
 </head>
 <body>
-    <header>
-        <h1 id="title">The Self-Learners Survey Form</h1>
-        <p id="description">A survey to understand the experiences of self-learners</p>
-    </header>
-
-    <div id="form-div">
-        <form id="survey-form" action="submit">
-            <label id="name-label" for="name">Name</label>
-            <input id="name" type="text" name="name" placeholder="Enter your name">
-    
-            <label id="email-label" for="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="Enter your email">
-    
-            <label id="number-label" for="number">Age</label>
-            <input id="number" type="number" name="age" min="1" max="120" placeholder="Age">
-    
-            <label for="dropdown">Which option best describes your current role?</label>
-            <select id="dropdown" name="current-role">
-                <option value="Student">Student</option>
-                <option value="Full-time">Full-time</option>
-                <option value="Part-time">Part-Time</option>
-                <option value="Unemployed">Unemployed</option>
-            </select>
-    
-            <fieldset>
-                <legend>Gender</legend>
-                <label for="male">Male</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="female">Female</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="other">Other</label>  
-                <input type="radio" id="other" name="gender" value="other">
-            </fieldset>
-    
-            <fieldset>
-                <legend>How do you self-learn</legend>
-                <label for="vehicle1">Books</label>
-                <input type="checkbox" id="books" name="study-method" value="books">
-    
-                <label for="vehicle2">Youtube Tutorials</label>
-                <input type="checkbox" id="vehicle2" name="study-method" value="Youtube Tutorials">
-    
-                <label for="vehicle3">Online Courses</label>
-                <input type="checkbox" id="vehicle3" name="study-method" value="Online Courses">
-            </fieldset>
-    
-            <label for="tips">What tips and recommendations you have for other self-learners?</label>
-            <textarea name="tips" id="tips" cols="30" rows="10" maxlength="500" placeholder="Enter your text here..."></textarea>
-    
-            <button type="submit">SUBMIT</button>
-        </form>
-    </div>
+   <div class="container">
+       <h1 class="brand"><span>Acme</span> Web Design</h1>
+       <div class="wrapper animated bounceInLeft">
+           <div class="company-info">
+            <h3>Acme Web Design</h3>
+            <ul>
+                <li><i class="fa fa-road"></i> 44 Something st</li>
+                <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+                <li><i class="fa fa-envelope"></i> test@acme.test</li>
+            </ul>
+           </div>
+           <div class="contact">
+                <h3>Email Us</h3>
+                <form>
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <label>Company</label>
+                        <input type="text">
+                    </p>
+                    <p>
+                        <label>Email Address</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Phone Number</label>
+                        <input type="text" name="phone">
+                    </p>
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5"></textarea>
+                    </p>
+                    <p class="full">
+                        <button>Submit</button>
+                    </p>
+                </form>
+           </div>
+       </div>
+   </div>
 </body>
 </html>
