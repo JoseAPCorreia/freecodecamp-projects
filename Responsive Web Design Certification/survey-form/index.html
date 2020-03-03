@@ -22,26 +22,39 @@
                 <h3>Email Us</h3>
                 <form id="survey-form">
                     <p>
-                        <label>Name</label>
-                        <input type="text" id="name" name="name">
+                        <label id="name-label">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Insert your full name here">
                     </p>
                     <p>
-                        <label>Age</label>
-                        <input type="number">
+                        <label id="number-label">Age</label>
+                        <input type="number" id="number" min="1" max="120" placeholder="Insert your age here">
                     </p>
                     <p>
-                        <label>Email Address</label>
-                        <input type="email" id="email" name="email">
+                        <label id="email-label">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Insert your email here">
                     </p>
                     <p>
-                        <label>Phone Number</label>
-                        <input type="text" name="phone">
-                    </p>
+                        <label>Gender</label>
+                        <select id="cars" name="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                          </select>                    
+                        </p>
+                        <p>
+                            <label id="email-label">Radio Here</label>
+                            <input type="email" id="email" name="email" placeholder="Insert your email here">
+                        </p>
+                        <p>
+                            <label id="email-label">Checkbox here</label>
+                            <input type="email" id="email" name="email" placeholder="Insert your email here">
+                        </p>
                     <p class="full">
                         <label>Tips and recommendations</label>
                         <textarea name="message" rows="5"></textarea>
                     </p>
-                    <p class="full">
+                    <p class="full" id="submit">
                         <button>Submit</button>
                     </p>
                 </form>
