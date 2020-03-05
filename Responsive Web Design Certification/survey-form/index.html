@@ -22,7 +22,7 @@
                 <form id="survey-form">
                     <p>
                         <label id="name-label">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Insert your full name here">
+                        <input type="text" id="name" name="name" required="required" placeholder="Insert your full name here">
                     </p>
                     <p>
                         <label id="number-label">Age</label>
@@ -30,14 +30,14 @@
                     </p>
                     <p>
                         <label id="email-label">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Insert your email here">
+                        <input type="email" id="email" name="email" required="required" placeholder="Insert your email here">
                     </p>
                     <p>
                         <label>Status</label>
-                        <select id="cars" name="cars">
-                            <option value="volvo">Student</option>
-                            <option value="saab">Working full-time</option>
-                            <option value="fiat">Working part-time</option>
+                        <select id="dropdown" name="status">
+                            <option value="student">Student</option>
+                            <option value="full-time">Working full-time</option>
+                            <option value="part-time">Working part-time</option>
                           </select>                    
                     </p>
                     <p>
@@ -55,21 +55,21 @@
                         <p>
                             <label id="study-method-label">Study Method</label>
                             <label for="books">Books
-                                <input type="checkbox" id="books" name="books" value="books">
+                                <input type="checkbox" id="books" name="books" value="1">
                             </label>
                             <label for="youtube">Youtube
-                                <input type="checkbox" id="youtube" name="youtube" value="youtube">
+                                <input type="checkbox" id="youtube" name="youtube" value="2">
                             </label>
                             <label for="online-courses">Online Courses
-                                <input type="checkbox" id="online-courses" name="online-courses" value="">
+                                <input type="checkbox" id="online-courses" name="online-courses" value="3">
                             </label>                    
                         </p>
                     <p class="full">
                         <label>Tips and recommendations</label>
                         <textarea name="message" rows="5"></textarea>
                     </p>
-                    <p class="full" id="submit">
-                        <button>Submit</button>
+                    <p class="full">
+                        <button id="submit">Submit</button>
                     </p>
                 </form>
            </div>
