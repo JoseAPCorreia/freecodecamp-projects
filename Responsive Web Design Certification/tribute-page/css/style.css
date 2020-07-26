@@ -1,10 +1,17 @@
-body{
+#main{
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #eee;
+}
+#main > h1, h2, p{
   text-align: center;
 }
 
 img {
     max-width: 100%;
     height: auto;
+    padding-bottom: 5px;
   }
 
 h1, h2 {
@@ -13,4 +20,8 @@ h1, h2 {
 
 li{
   line-height: 1.5em;
+}
+
+ul{
+  padding-bottom: 15px;
 }
