@@ -9,9 +9,10 @@
 }
 
 img {
+    display: block;
+    margin: 40px auto 20px auto;
     max-width: 100%;
-    height: auto;
-    padding-bottom: 5px;
+    border-radius: 30px;
   }
 
 h1, h2 {
@@ -24,4 +25,9 @@ li{
 
 ul{
   padding-bottom: 15px;
+}
+
+#img-caption{
+  text-align: center;
+  background: white;
 }
