@@ -1,79 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/c8684a9e07.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
-    <title>Survey Form</title>
-</head>
-<body>
-   <div class="container">
-       <h1 id="title">The <span>Self-Learners</span> Survey</h1>
-       <div class="wrapper animated bounceInLeft">
-           <div class="survey-obj">
-            <h3 id="objective-h3">Survey's Objective</h3>
-                <p id="description">
-                    Get information on the ways that self-learners practice and what they can recommend to others...
-                </p>
-           </div>
-           <div class="survey">
-                <form id="survey-form">
-                    <p>
-                        <label id="name-label">Name</label>
-                        <input type="text" id="name" name="name" required="required" placeholder="Insert your full name here">
-                    </p>
-                    <p>
-                        <label id="number-label">Age</label>
-                        <input type="number" id="number" min="1" max="120" placeholder="Insert your age here">
-                    </p>
-                    <p>
-                        <label id="email-label">Email Address</label>
-                        <input type="email" id="email" name="email" required="required" placeholder="Insert your email here">
-                    </p>
-                    <p>
-                        <label>Status</label>
-                        <select id="dropdown" name="status">
-                            <option value="student">Student</option>
-                            <option value="full-time">Working full-time</option>
-                            <option value="part-time">Working part-time</option>
-                          </select>                    
-                    </p>
-                    <p>
-                        <label id="gender-label">Gender</label>
-                            <label for="male">Male
-                                <input type="radio" id="male" name="gender" value="male">
-                            </label>
-                            <label for="female">Female
-                                <input type="radio" id="female" name="gender" value="female">
-                            </label>
-                            <label for="other">Other
-                                <input type="radio" id="other" name="gender" value="other">
-                            </label>                       
-                        </p>
-                        <p>
-                            <label id="study-method-label">Study Method</label>
-                            <label for="books">Books
-                                <input type="checkbox" id="books" name="books" value="1">
-                            </label>
-                            <label for="youtube">Youtube
-                                <input type="checkbox" id="youtube" name="youtube" value="2">
-                            </label>
-                            <label for="online-courses">Online Courses
-                                <input type="checkbox" id="online-courses" name="online-courses" value="3">
-                            </label>                    
-                        </p>
-                    <p class="full">
-                        <label>Tips and recommendations</label>
-                        <textarea name="message" rows="5"></textarea>
-                    </p>
-                    <p class="full">
-                        <button id="submit">Submit</button>
-                    </p>
-                </form>
-           </div>
-       </div>
-   </div>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <p id="description"></p>
+    <form action="" id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+      />
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />  
+    </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>
