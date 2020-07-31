@@ -5,14 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <title>The Gamer's Survey</title>
   </head>
   <body>
     <h1 id="title">The Gamer's Survey</h1>
-    <p id="description"></p>
-    <form action="" id="survey-form">
+    <p id="description">A small survey for all our gamer friends out there</p>
+    <form action="" id="survey-form" class="jumbotron">
         <label id="name-label" for="name">Name</label>
         <input
           type="text"
@@ -29,16 +31,18 @@
           placeholder="Enter your Email"
           required
       />
-      <label id="number-label" for="number"
-        >Age<span class="clue">(optional)</span></label>
-      <input
-        type="number"
-        name="age"
-        id="number"
-        min="5"
-        max="99"
-        placeholder="Age"
-      />
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label>
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="5"
+          max="99"
+          placeholder="Age"
+        />
+      </div>
       <p>Which option best describes your current role?</p>
       <select id="dropdown" name="role" class="form-control" required>
         <option disabled selected value>Select current role</option>
