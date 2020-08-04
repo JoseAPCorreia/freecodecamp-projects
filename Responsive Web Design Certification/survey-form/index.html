@@ -16,7 +16,7 @@
     <p id="description">A small survey for all our gamer friends out there</p>
     <form action="" id="survey-form" class="jumbotron">
         <div class="form-group">
-          <label id="name-label" for="name">Name</label>
+          <label id="name-label" class="sub-title" for="name">Name</label>
           <input
             type="text"
             name="name"
@@ -26,7 +26,7 @@
           />
         </div>
         <div class="form-group">
-          <label id="email-label" for="email">Email</label>
+          <label id="email-label" class="sub-title" for="email">Email</label>
           <input
             type="email"
             name="email"
@@ -36,7 +36,7 @@
         />
         </div>
       <div class="form-group">
-        <label id="number-label" for="number"
+        <label id="number-label" class="sub-title" for="number"
           >Age<span class="clue">(optional)</span></label>
         <input
           type="number"
@@ -48,7 +48,7 @@
         />
       </div>
       <div class="form-group">
-        <p>Which option best describes your current role?</p>
+        <p class="sub-title">Which option best describes your current role?</p>
         <select id="dropdown" name="role" class="form-control" required>
           <option disabled selected value>Select current role</option>
           <option value="student">Student</option>
@@ -58,9 +58,9 @@
           <option value="other">Other</option>
         </select>
       </div>
-      <div class="form-group">
-        <p>What is your gender?</p>
-        <label>
+      <div class="form-group boxes">
+        <p class="sub-title">What is your gender?</p>
+        <label >
           <input
             name="gender"
             value="Male"
@@ -82,8 +82,8 @@
             type="radio"
           />Other</label>
       </div>
-      <div class="form-group">
-        <p>
+      <div class="form-group boxes">
+        <p class="sub-title">
           Favorite game genres?
         </p>
         <label
@@ -100,7 +100,7 @@
             type="checkbox"
           />Fighting Games</label
         >
-        <label
+        <label 
           ><input
             name="genre"
             value="battle-royale-games"
@@ -142,13 +142,7 @@
             type="checkbox"
           />Horror</label
         >
-        <label
-          ><input
-            name="genre"
-            value="casual"
-            type="checkbox"
-          />Casual</label
-        >
+
         <label
           ><input
             name="genre"
@@ -157,15 +151,15 @@
           />Adventure</label>
       </div>
         
-      <div>
-        <p>What you hoping for the future of gaming?</p>
+      <div class="form-group">
+        <p class="sub-title">What you hoping for the future of gaming?</p>
         <textarea
           name="hopes"
           placeholder="Enter your hopes here..."
         ></textarea>
       </div>
 
-        <button type="submit">
+        <button type="submit" id="submit">
           Submit
         </button>
     </form>
