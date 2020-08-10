@@ -7,6 +7,16 @@
     margin-top: 100px
 }
 
-.card{
-    width: 18rem;;
+h2{
+    padding-bottom: 1em;
+}
+
+.card-deck img {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+
+.card-deck h5 {
+    text-align: center;
 }
