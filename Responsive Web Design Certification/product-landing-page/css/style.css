@@ -31,3 +31,9 @@ h2{
     padding-bottom: 1em;
     padding-top: 2em;
 }
+
+#header{
+   position: fixed;
+   top: 0;
+   width: 100%
+}
