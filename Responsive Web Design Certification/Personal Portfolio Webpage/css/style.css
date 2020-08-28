@@ -1,0 +1,132 @@
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+H1, H2, h3{
+    font-family:'Open Sans', sans-serif;
+}
+
+nav{
+    position: fixed;
+}
+h1{
+    font-size: 5em;
+    font-weight: 800;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+    padding-top: 0px;
+    margin-top: 0px;
+    background-image: linear-gradient(360deg, rgba(211, 149, 155, 0.8), rgba(191, 230, 186, 0.7)), url(/media/hero-banner.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+#welcome-section h1,
+#welcome-section p{
+    text-align: center;
+    color: white;
+}
+
+#welcome-section p{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+#welcome-section hr{
+    height: 1px;
+    width: 350px;
+    background-color: rgb(194, 230, 186);
+    border: none;
+}
+
+.social-links a {
+    margin: 5px;
+    color: white;
+    font-size: 2em;
+  }
+
+/* Specific colors of social links when hovered */
+.social-links .github-link:hover {
+    color: #000;
+  }
+  .social-links .fcc-link:hover {
+    color: #106E29;
+  }
+  .social-links .linkedin-link:hover {
+    color: #007bb5;
+  }
+  .social-links .twitter-link:hover {
+    color: #55acee;
+  }
+  .social-links .email-link:hover {
+    color:#dd4b39;
+  }
+
+  .about
+{
+  background:#dc4b4b;
+  padding:2.5em 2%;
+}
+p.about-text
+{
+  text-align:justify;
+  color:#19152f;
+}
+#about-img {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+    margin-left: 50%;
+    margin-bottom: 50px;
+  }
+
+  .fa-chevron-left {
+    font-size: 4em;
+    margin-top: 100%;
+  }
+
+  #projects {
+    height: auto;
+    margin: auto;
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    align-items: center;
+  }
+
+  .project-tile {
+    cursor: pointer;
+  }
+
+  #projects h2{
+      font-size: 4em;
+      font-weight: 500;
+      margin-bottom: 1em;
+  }
